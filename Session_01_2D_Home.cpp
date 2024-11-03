@@ -146,7 +146,7 @@ int main(int argc, char **argv)
 	glutInitWindowPosition(100, 100);
 	glutInitWindowSize(1280, 720);
 
-	glutCreateWindow("House 2D");
+	glutCreateWindow("2D_Home");
 	glutDisplayFunc(draw);
 	glutMainLoop();
 
