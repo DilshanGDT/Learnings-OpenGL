@@ -41,7 +41,31 @@ void draw()
 	glVertex2f(-0.55f, -0.8f);
 	glEnd();
 
-		////Foundation
+	glBegin(GL_QUADS);
+	glColor3f(0.0f, 1.0f, 1.0f);
+	glVertex2f(0.05f, -0.8f);
+	glVertex2f(0.05f, -0.5f);
+	glVertex2f(-0.05f, -0.5f);
+	glVertex2f(-0.05f, -0.8f);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0f, 0.6f, 0.4f);
+	glVertex2f(0.05f, -0.8f);
+	glVertex2f(0.05f, -0.95f);
+	glVertex2f(-0.05f, -0.95f);
+	glVertex2f(-0.05f, -0.8f);
+	glEnd();
+
+	glBegin(GL_QUADS);
+	glColor3f(1.0f, 0.6f, 0.4f);
+	glVertex2f(-1.0f, -0.95f);
+	glVertex2f(1.0f, -0.95f);
+	glVertex2f(1.0f, -0.99f);
+	glVertex2f(-1.0f, -0.99f);
+	glEnd();
+
+	////Foundation
 	// glBegin(GL_QUADS);
 	//  //Color for the Foundation
 	//  glColor3f(0.0f, 0.0f, 0.5f);
