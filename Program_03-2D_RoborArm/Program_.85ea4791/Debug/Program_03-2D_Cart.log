@@ -1,0 +1,2 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Program_.85ea4791\Debug\) contains files shared from another project (Program_03-2D_Cart.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Program_03-2D_Cart.vcxproj -> C:\Users\Dilshan\Documents\VS Code\CSC_3081\Learnings-OpenGL\Program_03-2D_Cart\Debug\Program_03-2D_RobotArm.exe
