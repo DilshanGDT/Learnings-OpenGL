@@ -4,11 +4,13 @@
 float PI = 3.14;
 int frameNumber = 0;
 
-void drawDisk(double radius, int n) {
+void drawDisk(double radius, int n)
+{
 
     double angle = 0;
     glBegin(GL_POLYGON);
-    for (int c = 0; c <= n; c++) {
+    for (int c = 0; c <= n; c++)
+    {
         double x = radius * cos(angle);
         double y = radius * sin(angle);
         glVertex2d(x, y);
@@ -17,7 +19,8 @@ void drawDisk(double radius, int n) {
     glEnd();
 }
 
-void drawBearing() {
+void drawBearing()
+{
 
     // Outer black part
     glColor3f(0.0, 0.0, 0.0);
@@ -31,15 +34,16 @@ void drawBearing() {
     drawDisk(0.2, 32);
 }
 
-void drawHandles() {
+void drawHandles()
+{
 
     // A
     glColor3f(0.68, 0.85, 0.90);
     glBegin(GL_POLYGON);
-    glVertex2f(-4.0, -6.0);     // BL
-    glVertex2f(-2.0, -6.0);     // BR
-    glVertex2f(-2.0, 0.0);      // TR
-    glVertex2f(-4.0, 0.0);      // TL
+    glVertex2f(-4.0, -6.0); // BL
+    glVertex2f(-2.0, -6.0); // BR
+    glVertex2f(-2.0, 0.0);  // TR
+    glVertex2f(-4.0, 0.0);  // TL
     glEnd();
 
     // B
@@ -52,7 +56,8 @@ void drawHandles() {
     glEnd();
 }
 
-void drawArm() {
+void drawArm()
+{
 
     // Draw arm handles
     drawHandles();
@@ -68,13 +73,14 @@ void drawArm() {
     glTranslatef(-3.0, 0.0, 0.0);
     drawBearing();
     glPopMatrix();
-
 }
 
-void reshape(GLsizei w, GLsizei h) {
+void reshape(GLsizei w, GLsizei h)
+{
 
     glViewport(0, 0, w, h);
-    if (h == 0) h = 1;
+    if (h == 0)
+        h = 1;
     GLfloat aspect = (GLfloat)w / (GLfloat)h;
 
     glMatrixMode(GL_PROJECTION);
@@ -85,7 +91,8 @@ void reshape(GLsizei w, GLsizei h) {
         gluOrtho2D(-10, 10, -10 / aspect, 10 / aspect);
 }
 
-void display() {
+void display()
+{
 
     glClear(GL_COLOR_BUFFER_BIT);
     glLineWidth(2.0);
@@ -98,20 +105,22 @@ void display() {
     glFlush();
 }
 
-void init() {
+void init()
+{
 
-    glClearColor(1.0, 1.0, 1.0, 1.0);  // White background
+    glClearColor(1.0, 1.0, 1.0, 1.0); // White background
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv)
+{
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);
 
     glutInitWindowPosition(100, 100);
     glutInitWindowSize(720, 480);
-    glutCreateWindow("Cart");
+    glutCreateWindow("Robot Arm");
 
     init();
 
