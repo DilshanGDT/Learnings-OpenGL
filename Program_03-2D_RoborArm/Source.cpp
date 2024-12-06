@@ -34,7 +34,6 @@ void drawBearing()
 
 void drawHandles()
 {
-
     // A
     glColor3f(0.68, 0.85, 0.90);
     glBegin(GL_POLYGON);
@@ -56,7 +55,6 @@ void drawHandles()
 
 void drawArm()
 {
-
     // Draw arm handles
     drawHandles();
 
@@ -75,7 +73,6 @@ void drawArm()
 
 void reshape(GLsizei w, GLsizei h)
 {
-
     glViewport(0, 0, w, h);
     if (h == 0)
         h = 1;
@@ -91,7 +88,6 @@ void reshape(GLsizei w, GLsizei h)
 
 void display()
 {
-
     glClear(GL_COLOR_BUFFER_BIT);
     glLineWidth(2.0);
 
@@ -105,14 +101,12 @@ void display()
 
 void init()
 {
-
     glClearColor(1.0, 1.0, 1.0, 1.0); // White background
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
 int main(int argc, char **argv)
 {
-
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE);
 
