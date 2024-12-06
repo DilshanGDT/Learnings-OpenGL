@@ -6,7 +6,6 @@ int frameNumber = 0;
 
 void drawDisk(double radius, int n)
 {
-
     double angle = 0;
     glBegin(GL_POLYGON);
     for (int c = 0; c <= n; c++)
@@ -21,7 +20,6 @@ void drawDisk(double radius, int n)
 
 void drawBearing()
 {
-
     // Outer black part
     glColor3f(0.0, 0.0, 0.0);
     drawDisk(1, 32);
