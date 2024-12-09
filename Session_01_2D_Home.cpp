@@ -20,16 +20,7 @@ void draw()
 	glVertex2f(-0.6f, 0.1f);
 	glEnd();
 
-	/*float i = -0.6;
-	while(i<0.6) {
-	glBegin(GL_LINES);
-	glColor3f(0.0f, 0.0f, 0.0f);
-	glVertex2f(i, 0.7);
-	i += 0.1;
-	glEnd();
-	}*/
-
-	// Walls
+		// Walls
 	glBegin(GL_QUADS);
 	// Color for the Walls
 	glColor3f(0.0f, 0.0f, 1.0f);
