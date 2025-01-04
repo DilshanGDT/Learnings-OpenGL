@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Dilshan\Documents\VS Code\CSC_3081\Learnings-OpenGL\Program_04-3D_ShapesDrawing\Source.cpp(126,6): error C2084: function 'void drawPyramid(void)' already has a body
+      C:\Users\Dilshan\Documents\VS Code\CSC_3081\Learnings-OpenGL\Program_04-3D_ShapesDrawing\Source.cpp(33,6):
+      see previous definition of 'drawPyramid'
+  
