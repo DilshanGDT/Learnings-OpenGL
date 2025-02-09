@@ -65,8 +65,7 @@ void setLightingAndShading() {
 	//glEnable(GL_LIGHT0);
 
 	//Defining the illumination or intensity of the light sourse
-	//(r,g,b,opacity) - normalized values
-	GLfloat l0amb[] = { 0.2,0.2,0.2,1.0 }; // array
+	GLfloat l0amb[] = { 0.2,0.2,0.2,1.0 };
 	GLfloat l0diff[] = { 0.8,0.8,0.8,1.0 };
 	GLfloat l0spec[] = { 1.0,1.0,1.0,1.0 };
 
