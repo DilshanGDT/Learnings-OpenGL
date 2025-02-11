@@ -1,0 +1,3 @@
+﻿  Main.cpp
+H:\Year 03\CSC_3081\Session_08\Project_8\Main.cpp(24,22): error C2059: syntax error: ';'
+H:\Year 03\CSC_3081\Session_08\Project_8\Main.cpp(38,2): error C2065: 'topCapTexture': undeclared identifier
